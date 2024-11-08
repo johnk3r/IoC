@@ -1,35 +1,13 @@
-imprintcenter.com
-imags.pw
-cddn.site
-yzxi.net
-cdn-filestorm.com
-cdn-frontend.com
-googie-analytics.online
-googletagsmanager.website
-static-zdassets.com
-cdn-cgi.net
-2xdepp.com
-elon2xmusk.com
-rithdigit.cyou
-yachtbars.fun
-okqtfc1.org
-jquery-node.com
-znanielec.online
-intrgqc.site
-beztech.site
-oitool.shop
-nuinetec.store
-grutic.store
-defcleth.click
-reftop.click
-jeitoon.quest
-vidkimob.quest
-setmic.shop
-stabit.click
-yanaloop.shop
-teloom.site
-feitec.online
-avitech.site
-sewloot.click
-clifolink.online
-feigoton.store
+ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (losttwister.com)","2055242
+ET EXPLOIT_KIT TA569 Middleware Domain in TLS SNI (losttwister.com)","2050715
+ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (auth-owlting.com)","2055841
+ET EXPLOIT_KIT TA569 Middleware Domain in TLS SNI (auth-owlting.com)","2055843
+ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (majorbrdide com)","2055874
+ET EXPLOIT_KIT TA569 Middleware Domain in TLS SNI (cdngetmyname.biz)","2056201
+ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (blacksaltys.com)","2054718
+ET EXPLOIT_KIT TA569 Keitaro TDS Domain in TLS SNI (packedbrick.com)","2858667
+ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (promiseresolverdev.com)","2057112
+ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (objmapper.com)","2057145
+ET EXPLOIT_KIT TA569 Middleware Domain in TLS SNI (objmapper.com)","2057147
+ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (loopconstruct.com)","2057153
+ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (webapiintegration cloud)","2057252
