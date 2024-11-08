@@ -1,13 +1,12 @@
-ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (losttwister.com)","2055242
-ET EXPLOIT_KIT TA569 Middleware Domain in TLS SNI (losttwister.com)","2050715
-ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (auth-owlting.com)","2055841
-ET EXPLOIT_KIT TA569 Middleware Domain in TLS SNI (auth-owlting.com)","2055843
-ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (majorbrdide com)","2055874
-ET EXPLOIT_KIT TA569 Middleware Domain in TLS SNI (cdngetmyname.biz)","2056201
-ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (blacksaltys.com)","2054718
-ET EXPLOIT_KIT TA569 Keitaro TDS Domain in TLS SNI (packedbrick.com)","2858667
-ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (promiseresolverdev.com)","2057112
-ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (objmapper.com)","2057145
-ET EXPLOIT_KIT TA569 Middleware Domain in TLS SNI (objmapper.com)","2057147
-ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (loopconstruct.com)","2057153
-ET EXPLOIT_KIT TA569 Middleware Domain in DNS Lookup (webapiintegration cloud)","2057252
+losttwister.com
+losttwister.com
+auth-owlting.com
+auth-owlting.com
+cdngetmyname.biz
+blacksaltys.com
+packedbrick.com
+promiseresolverdev.com
+objmapper.com
+objmapper.com
+loopconstruct.com
+webapiintegration.cloud
