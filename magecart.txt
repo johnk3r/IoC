@@ -1,18 +1,150 @@
-"prapaz.objetuespelho.sbs",
-"blubel.objeturelogio.sbs",
-"strogem.objeturelogio.sbs",
-"grafincal.objetumochila.sbs",
-"gramtenconvaz6.objetuquadro.sbs",
-"glefer.objetuespelho.sbs",
-"crotal.objetucaderno.sbs",
-"cremonsil.objetutoalha.sbs",
-"flipinfel61.objetutalher.sbs",
-"plidinvel.objetumochila.sbs",
-"straim.objetuprato.sbs",
-"strial470.objetucaderno.sbs",
-"stretanhennal464.objetutalher.sbs",
-"plisul22.objetucopo.sbs",
-"prisinbennil63.objetutoalha.sbs",
-"scriwincanbel.objetuquadro.sbs",
-"grucinnal.objetuprato.sbs",
-"blucal133.objetucopo.sbs"
+[store-fraud-shopify] [http] [info] http://centauro-comercial.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://comercial-centauro.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://hpdesconto.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://kassbrasilshop.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://blackcentauro.store/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://atacadopromocaodasemana.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://centauroofertas.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://kassbrasilshop.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://kassbrasilstore.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://kassbrasilshop.store/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://atacadosofertabrasil.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://centauro70off.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://lojagimports.com.br/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://atacadoscomoferta.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://blackfriiday.site/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://mercadolivemesdablack.site/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://korghoofertasedescontos.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://ofertaempromo.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://kvinnerbrasil.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://lardescontos.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://novembernapisada.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://lojaxpstore.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://pontotopofertas.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://kassbrasilstore.store/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://lojadevariiedades.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://mesdablackmercadollvre.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://lojavariedadeecia.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://mercadolivreprime.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://kassbrasilstore.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://promocional-centauro.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://garimpooferta.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://supermercadoatacadao.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://mercadolivepromohoje.site/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://lkstorepromocoes.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://parceirosofertas.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://lojainovart.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://xn--mercadolivrepromooes-k1b.store/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://atacadoscomoferta.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://achetudoaqui.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://ofertasdenatall.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://atacadaofollowcell.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://abundanteshop.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://lojascentaurobrasil.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://blackcentauro.store/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://promosupermercado.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://centauro-comercial.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://avantdiscount.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://blackfriiday.site/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://maxcenterdesconto.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://centauroofertas.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://cb50h0-bg.myshopify.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://mercadonatallivre.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://atacadosempromocao.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://comercial-centauro.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://atacadopromocoesfinaldesemana.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://credesconto.store/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://www.nexostore.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://dropshopline.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://eshopoferta.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://atacadopromobrasil.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://gametechcentral.com.br/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://www.avantdiscount.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://frequenciashop.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://demaisofertas.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://atacadosofertasdodia.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://kassbrasilshop.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://atacadopromocaodasemana.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://kassbrasilshop.store/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://kassbrasilstore.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://kassbrasilstore.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://korghoofertasedescontos.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] http://tempromocoes.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://lkstorepromocoes.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://hpdesconto.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://lardescontos.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://lojagimports.com.br/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://lojadevariiedades.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://ganhemaisofertas.com.br/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://lojaatacadao.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://gigacompras.com.br/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://kassbrasilshop.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://lojaclickstores.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://lojavariedadeecia.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://lojaxpstore.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://lojagigashop.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://kassbrasilstore.store/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://lojaseudigital.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://cantododesconto.com.br/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://lojashefa.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://megamega.digital/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://lojainovart.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://desconto-mais.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://drestor.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://megastorepromocoes.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://lojascentaurobrasil.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://mesdablackmercadollvre.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://mercadodigitalonline.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://mercadolivemesdablack.site/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://novembernapisada.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://maxxtudo.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://mercadonatallivre.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://ofertasdenatall.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://mercadolivepromohoje.site/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://mercadolivrepromoblack.myshopify.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://mercadoliveautopecas.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://jpshopofertas.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://ofertasdenovembro.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://gametechcentral.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://parceirosofertas.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://obrigadadenadia.com.br/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://parceriadasofertas.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://maxcenterdesconto.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://atacadosofertabrasil.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://pontotopofertas.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://promocional-centauro.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://movshop.store/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://promosupermercado.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://overcoming.store/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://potenciadigitalshop.com.br/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://promosblackfridaybr.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://ofertaempromo.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://lojamundosdeofertas.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://tempromocoes.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://supermercadoatacadao.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://solofertas.digital/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://descontoonlineshop.com.br/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://portalshop.vip/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://superratacadao.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://mhtemdetudo.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://shopsafe.digital/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://temqter.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://tudonline.net/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://tudoeletrotec.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://wp9hry-kq.myshopify.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://virtcasashop.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://www.gametechcentral.shop/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://www.maxcenterdesconto.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://www.desconto-mais.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://www.garimpooferta.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://www.lojaseudigital.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://www.lojaatacadao.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://xn--mercadolivrepromooes-k1b.store/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://www.ganhemaisofertas.com.br/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://mercadolivreprime.online/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://www.supermercadoatacadao.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://z3ekm0-fh.myshopify.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://www.shopsafe.digital/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://queenmega.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://www.superratacadao.com/checkouts/internal/preloads.js?locale=pt-BR
+[store-fraud-shopify] [http] [info] https://vitrineglobalbr.com/checkouts/internal/preloads.js?locale=pt-BR
