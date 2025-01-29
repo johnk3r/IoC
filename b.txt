@@ -42,3 +42,4 @@ IoT::
     USB Rubber Ducky
     Bash Bunny
     Proxmark3
+| search devices IN ("Hak5 LAN Turtle", "Hak5 Packet Squirrel", "Hak5 WiFi Pineapple", "USB Rubber Ducky", "Bash Bunny", "Proxmark3", "Arduino", "Flipper Zero", "Raspberry Pi")
