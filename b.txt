@@ -1,2 +1,2 @@
-| rex field=url "https?://[^/]+/([^/]+)/([^/]+)" 
-| eval extracted_value=replace(mvjoin(mvappend($1, $2), "."), "/", ".")
+| rex field=url "https?://[^/]+/(?<path1>[^/]+)/(?<path2>[^/]+)"
+| eval extracted_value=path1 . "." . path2
