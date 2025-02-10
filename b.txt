@@ -1,2 +1,46 @@
-| rex field=url "https?://[^/]+/[^/]+/(?<path1>[^/]+)/(?<path2>[^/]+)"
-| eval extracted_value=path1 . "." . path2
+# Definir os caminhos dos arquivos
+$inputFile = "extension_input.txt"   # Arquivo contendo os nomes das extensões
+$outputFile = "extension_output.txt" # Arquivo de saída
+
+# Limpar o arquivo de saída antes de começar
+Clear-Content -Path $outputFile -ErrorAction SilentlyContinue
+
+# Ler cada linha do arquivo de entrada
+Get-Content $inputFile | ForEach-Object {
+    $filename = $_
+    $url = "https://marketplace.visualstudio.com/items?itemName=$filename"
+
+    # Fazer o request para a URL
+    try {
+        $response = Invoke-WebRequest -Uri $url -UseBasicParsing
+        $content = $response.Content
+
+        # Extrair as tags <meta>
+        if ($content -match '<meta name="description" content="([^"]+)".*?>') {
+            $description = $matches[1]
+        } else {
+            $description = "Descrição não encontrada"
+        }
+
+        if ($content -match '<meta property="og:title" content="([^"]+)".*?>') {
+            $ogTitle = $matches[1]
+        } else {
+            $ogTitle = "Título OG não encontrado"
+        }
+
+        # Remover entidades HTML
+        $decodedDescription = [System.Net.WebUtility]::HtmlDecode($description)
+        $decodedOgTitle = [System.Net.WebUtility]::HtmlDecode($ogTitle)
+
+        # Criar a saída formatada
+        $output = "Extensão: $filename`nDescrição: $decodedDescription`nTítulo OG: $decodedOgTitle`n`n"
+
+        # Salvar no arquivo
+        Add-Content -Path $outputFile -Value $output
+    }
+    catch {
+        Add-Content -Path $outputFile -Value "Erro ao processar $filename`n"
+    }
+}
+
+Write-Host "Processo concluído! Saída salva em: $outputFile"
