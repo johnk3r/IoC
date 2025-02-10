@@ -1,13 +1,2 @@
-let CIDRASN = (
-    externaldata (CIDR:string, CIDRASN:int, CIDRASNName:string, CIDRSource:string)
-    ['https://firewalliplists.gypthecat.com/lists/kusto/kusto-cidr-asn.csv.zip']
-    with (ignoreFirstRecord=true)
-);
-// Taken from Matt Zorich (@reprise99) awesome website: https://learnsentinel.blog/2021/08/30/azure-sentinel-and-the-story-of-a-very-persistent-attacker/
-let SuccessCodes = dynamic([0, 50055, 50057, 50155, 50105, 50133, 50005, 50076, 50079, 50173, 50158, 50072, 50074, 53003, 53000, 53001, 50129]);
-SigninLogs
-| where AppDisplayName == "OfficeHome"
-| where ResultType in (SuccessCodes)
-| evaluate ipv4_lookup(CIDRASN, IPAddress, CIDR, return_unmatched=true)
-
-
+| rex field=url "https?://[^/]+/([^/]+)/([^/]+)" 
+| eval extracted_value=replace(mvjoin(mvappend($1, $2), "."), "/", ".")
