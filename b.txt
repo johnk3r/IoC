@@ -1,18 +1,22 @@
 # Definir os caminhos dos arquivos
-$inputFile = "extension_input.txt"   # Arquivo contendo os nomes das extensões
-$outputFile = "extension_output.txt" # Arquivo de saída
+$inputFile = "C:\caminho\para\input.txt"   # Arquivo contendo os nomes das extensões
+$outputFile = "C:\caminho\para\output.txt" # Arquivo de saída
 
 # Limpar o arquivo de saída antes de começar
 Clear-Content -Path $outputFile -ErrorAction SilentlyContinue
+
+# Criar uma sessão web com proxy do sistema
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UseDefaultCredentials = $true  # Usa as credenciais padrão do sistema
 
 # Ler cada linha do arquivo de entrada
 Get-Content $inputFile | ForEach-Object {
     $filename = $_
     $url = "https://marketplace.visualstudio.com/items?itemName=$filename"
 
-    # Fazer o request para a URL
+    # Fazer o request para a URL com proxy
     try {
-        $response = Invoke-WebRequest -Uri $url -UseBasicParsing
+        $response = Invoke-WebRequest -Uri $url -WebSession $session -UseBasicParsing
         $content = $response.Content
 
         # Extrair as tags <meta>
