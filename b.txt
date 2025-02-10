@@ -5,9 +5,10 @@ $outputFile = "C:\caminho\para\output.txt" # Arquivo de saída
 # Limpar o arquivo de saída antes de começar
 Clear-Content -Path $outputFile -ErrorAction SilentlyContinue
 
-# Criar uma sessão web com proxy do sistema
-$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
-$session.UseDefaultCredentials = $true  # Usa as credenciais padrão do sistema
+# Criar um WebClient configurado com proxy e autenticação
+$webClient = New-Object System.Net.WebClient
+$webClient.Proxy = [System.Net.WebRequest]::GetSystemWebProxy()
+$webClient.Proxy.Credentials = [System.Net.CredentialCache]::DefaultCredentials
 
 # Ler cada linha do arquivo de entrada
 Get-Content $inputFile | ForEach-Object {
@@ -16,8 +17,7 @@ Get-Content $inputFile | ForEach-Object {
 
     # Fazer o request para a URL com proxy
     try {
-        $response = Invoke-WebRequest -Uri $url -WebSession $session -UseBasicParsing
-        $content = $response.Content
+        $content = $webClient.DownloadString($url)
 
         # Extrair as tags <meta>
         if ($content -match '<meta name="description" content="([^"]+)".*?>') {
