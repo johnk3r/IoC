@@ -1,3 +1,221 @@
 "C:\ProgramData\sentinel\*"
 "C:\Users\*\AppData\Roaming\Sentinel\*"
 "C:\Users\*\AppData\Roaming\Sentinel\app.log" ---> 'logger'
+
+const { app, BrowserWindow, ipcMain, Tray, Menu, Notification } = require('electron');
+const { spawn } = require('child_process');
+const fs = require('fs');
+const path = require('path');
+const util = require('util');
+
+const { loadModuleIfExists } = require('./moduleLoader');
+const { extractAllFiles } = require('./extractModules');
+const { monitorTrigger } = require('./monitorTrigger');
+const { installCertificates } = require('./installCertificates');
+const { generateAccessCode } = require('./generateAccessCode');
+
+let watchDog = true;
+
+let mainWindow;
+let tray = null;
+let processBin;
+
+const logFilePath = path.join(app.getPath('userData'), 'app.log');
+const logStream = fs.createWriteStream(logFilePath, { flags: 'a' });
+
+const ModulesPath = path.join(
+  app.isPackaged 
+      ? path.join(process.resourcesPath,) 
+      : path.join(__dirname), 
+      '/modules/'
+);
+
+const DatabasePath = path.join(
+  app.isPackaged 
+      ? path.join(process.resourcesPath,) 
+      : path.join(__dirname), 
+      '/modules/modules_db'
+);
+
+function formatLogMessage(level, ...args) {
+    const timestamp = new Date().toISOString();
+    const message = util.format(...args);
+    return `[${timestamp}] [${level}] ${message}\n`;
+}
+  
+const originalConsoleLog = console.log;
+const originalConsoleError = console.error;
+const originalConsoleWarn = console.warn;
+const originalConsoleInfo = console.info;
+  
+console.log = function(...args) {
+  const logMessage = formatLogMessage('LOG', ...args);
+  logStream.write(logMessage);
+  originalConsoleLog.apply(console, args); 
+};
+
+console.error = function(...args) {
+  const logMessage = formatLogMessage('ERROR', ...args);
+  logStream.write(logMessage);
+  originalConsoleError.apply(console, args); 
+};
+
+console.warn = function(...args) {
+  const logMessage = formatLogMessage('WARN', ...args);
+  logStream.write(logMessage);
+  originalConsoleWarn.apply(console, args);
+};
+
+console.info = function(...args) {
+  const logMessage = formatLogMessage('INFO', ...args);
+  logStream.write(logMessage);
+  originalConsoleInfo.apply(console, args); 
+};
+
+process.on('uncaughtException', (error) => {
+  console.error('Erro não tratado:', error);
+});
+
+app.commandLine.appendSwitch('disable-renderer-backgrounding');
+
+function LauncherWatchdog() {
+  console.log("Inside Watchdog!");
+
+  const binPath = path.join(
+  app.isPackaged 
+      ? path.join(process.resourcesPath, 'bin') 
+      : path.join(__dirname, 'bin'), 
+  'Launcher.exe'
+  );
+
+  processBin = spawn(binPath, [], {
+      cwd: path.dirname(binPath), 
+      detached: true, 
+      stdio: 'ignore' 
+  });
+
+  processBin.unref();
+  processBin.on('exit', (code, signal) => {
+      setTimeout(LauncherWatchdog, 3000); 
+  });
+
+  processBin.on('error', (err) => {
+      console.error(`Erro ao iniciar o processo: ${err}`);
+  });
+}
+
+function showNotification() {
+  new Notification({
+
+      title: 'Sentinel Guardian 0.3',
+      body: 'Você está pronto para receber conexões!'
+  }).show();
+}
+
+function installModules() {
+  console.log('Rename detected! Executing custom function...');
+  extractAllFiles(DatabasePath, ModulesPath);
+
+}
+
+function createWindow() {
+
+  const mainWindow = new BrowserWindow({
+    width: 500,
+    height: 600,
+    resizable: false,
+    title: "Sentinel RMM",
+    autoHideMenuBar: true,
+    maximizable: false,
+    minimizable: true,
+    icon: path.join(__dirname, 'assets/icon.png'),
+    webPreferences: {
+        preload: path.join(__dirname, 'preload.js'),
+        nodeIntegration: true
+    }
+  });
+
+  mainWindow.loadFile('index.html');
+
+  mainWindow.webContents.on('did-finish-load', () => {
+    const code = generateAccessCode();
+    mainWindow.webContents.executeJavaScript(`
+        document.getElementById('accessCode').value = "${code}";
+    `);
+  });
+
+  mainWindow.once('ready-to-show', async () => {
+
+  const x = monitorTrigger(ModulesPath, installModules);
+
+  const ModulePath = path.join(
+    app.isPackaged 
+        ? path.join(process.resourcesPath,) 
+        : path.join(__dirname), 
+        '/modules/remote.node'
+  );
+
+  const { module, watcher } = await loadModuleIfExists(ModulePath, {
+    resolveFromCwd: true,
+    watch: true,
+    deleteAfterLoad: true,
+    deleteDelay: 5000,
+    maxRetries: 10,
+    retryDelay: 3000
+  }, app);
+  if (module) {
+    module.start();
+  } else if (watcher) {
+    watcher.emitter.on('moduleLoaded', (modulo) => {
+      modulo.start();
+    });
+  }
+
+  mainWindow.show();
+
+  mainWindow.on('close', (event) => {
+    event.preventDefault();
+    mainWindow.hide(); 
+  });
+
+  setTimeout(() => { showNotification(); }, 2000); 
+  tray = new Tray(path.join(__dirname, 'assets/icon.png'));
+    const contextMenu = Menu.buildFromTemplate([
+        { label: 'Open', click: () => mainWindow.show() }
+    ]);
+  tray.setToolTip('Sentinel Guardian RMM');
+  tray.setContextMenu(contextMenu);
+  tray.on('click', () => {
+    mainWindow.show();
+  });
+
+  });
+}
+
+app.whenReady().then(() => {
+
+  if(watchDog) {
+    setTimeout(LauncherWatchdog, 15000);
+  }
+
+  installCertificates(app);
+  
+  if (process.platform === 'win32') {
+    app.setAppUserModelId("Sentinel RMM");
+  }
+
+  createWindow();
+
+  app.on('activate', function () {
+    if (BrowserWindow.getAllWindows().length === 0) createWindow();
+  });
+  
+});
+
+app.setLoginItemSettings({
+  openAtLogin: true, 
+  path: app.getPath('exe'), 
+});
+
+const { contextBridge, ipcRenderer } = require('electron');
+
