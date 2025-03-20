@@ -1,0 +1,3 @@
+"C:\ProgramData\sentinel\*"
+"C:\Users\*\AppData\Roaming\Sentinel\*"
+"C:\Users\*\AppData\Roaming\Sentinel\app.log" ---> 'logger'
